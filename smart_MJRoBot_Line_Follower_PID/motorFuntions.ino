@@ -1,5 +1,6 @@
+//line folower bot using Arduino
 
-void motorStop()
+void motorStop()   //diclare daimeter here to stop moving
 {
   leftServo.writeMicroseconds(1500);
   rightServo.writeMicroseconds(1500);
@@ -7,14 +8,14 @@ void motorStop()
 }
 
 //--------------------------------------------- 
-void motorForward()
+void motorForward() //move forward
 {
   leftServo.writeMicroseconds(1500 - power);
   rightServo.writeMicroseconds(1500 + power*adj);
 }
 
 //---------------------------------------------
-void motorBackward()
+void motorBackward() //move backword
 {
   leftServo.writeMicroseconds(1500 + power);
   rightServo.writeMicroseconds(1500 - power);
